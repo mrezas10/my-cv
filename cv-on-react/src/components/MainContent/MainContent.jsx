@@ -10,544 +10,541 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 function MainContent() {
-    return (
-        <Box
+  return (
+    <Box
+      sx={{
+        background: "rgb(180,224,255)",
+        background:
+          "linear-gradient(228deg, rgba(180,224,255,1) 0%, rgba(255,255,255,1) 52%)",
+        boxSizing: "border-box",
+        padding: "2rem",
+        width: "65%",
+        display: "flex",
+        flexDirection: "column",
+        gap: "5rem",
+      }}
+    >
+      <Box
         sx={{
-          background: "rgb(180,224,255)",
-          background:
-            "linear-gradient(228deg, rgba(180,224,255,1) 0%, rgba(255,255,255,1) 52%)",
-          boxSizing: "border-box",
-          padding: "2rem",
-          width: "70%",
           display: "flex",
           flexDirection: "column",
-          gap: "4rem",
+          width: "100%",
+          alignItems: "center",
+          gap: "3rem",
         }}
       >
-        <Box
+        <Typography
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            alignItems: "center",
-            gap: "2rem",
+            fontSize: "4rem",
+            color: "#0041AD",
+            textTransform: "uppercase",
+            letterSpacing: "1rem",
           }}
         >
-          <Typography
-            sx={{
-              fontSize: "3rem",
-              color: "#0041AD",
-              textTransform: "uppercase",
-              letterSpacing: ".8rem",
-            }}
-          >
-            About Me
-          </Typography>
-          <Typography
-            sx={{
-              width: "100%",
-              fontSize: "1.5rem",
-            }}
-          >
-            I'm a computer engineer and decided to learn front-end development
-            because of my interest in web design and developement, i want to be
-            able get involve in major major web development projects and be a
-            part of a professional front-end dev team.
-          </Typography>
-        </Box>
-        <Box
+          About Me
+        </Typography>
+        <Typography
           sx={{
-            display: "flex",
-            flexDirection: "column",
             width: "100%",
-            alignItems: "center",
-            gap: "2rem",
+            fontSize: "2rem",
           }}
         >
-          <Typography
-            sx={{
-              fontSize: "3rem",
-              color: "#0041AD",
-              textTransform: "uppercase",
-              letterSpacing: ".8rem",
-            }}
-          >
-            skills
-          </Typography>
+          I'm a computer engineer and decided to learn front-end development
+          because of my interest in web design and developement, i want to be
+          able to get involve in major web development projects and be a part of
+          a professional front-end dev team.
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          alignItems: "center",
+          gap: "3rem",
+        }}
+      >
+        <Typography
+          sx={{
+            fontSize: "4rem",
+            color: "#0041AD",
+            textTransform: "uppercase",
+            letterSpacing: "1rem",
+          }}
+        >
+          skills
+        </Typography>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            fontSize: "1.3rem",
+          }}
+        >
           <Box
             sx={{
-              width: "100%",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around",
-              fontSize: "1.3rem",
+              width: "33%",
             }}
           >
-            <Box
+            <Typography
               sx={{
-                width: "33%",
+                fontSize: "2.4rem",
+                fontWeight: "bold",
               }}
             >
-              <Typography
-                sx={{
-                  fontSize: "2rem",
-                  fontWeight: "bold",
-                }}
-              >
-                Front-End
-              </Typography>
-              <List
-                sx={{
-                  marginLeft: "2rem",
-                }}
-              >
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <HtmlIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    HTML
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <CssIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    CSS
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <JavascriptIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Javascript
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <CodeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    React
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <CodeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Next
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <CodeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    MaterialUI
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
-            <Box
+              Front-End
+            </Typography>
+            <List
               sx={{
-                width: "33%",
+                marginLeft: "2rem",
               }}
             >
-              <Typography
+              <ListItem
                 sx={{
-                  fontSize: "2rem",
-                  fontWeight: "bold",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                Programming
-              </Typography>
-              <List
+                <HtmlIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  HTML
+                </Typography>
+              </ListItem>
+              <ListItem
                 sx={{
-                  marginLeft: "2rem",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                <ListItem
+                <CssIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <CodeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    C++
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <CodeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    C#
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <JavascriptIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Javascript
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <CodeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Java
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
-            <Box
-              sx={{
-                width: "33%",
-              }}
-            >
-              <Typography
+                  CSS
+                </Typography>
+              </ListItem>
+              <ListItem
                 sx={{
-                  fontSize: "2rem",
-                  fontWeight: "bold",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                Project Management
-              </Typography>
-              <List
+                <JavascriptIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Javascript
+                </Typography>
+              </ListItem>
+              <ListItem
                 sx={{
-                  marginLeft: "2rem",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                <ListItem
+                <CodeIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <GitHubIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Git
-                  </Typography>
-                </ListItem>
-                <ListItem
+                  React
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <CodeIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <WorkspacesIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Trello
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                  Next
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <CodeIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  MaterialUI
+                </Typography>
+              </ListItem>
+            </List>
           </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            alignItems: "center",
-            gap: "2rem",
-          }}
-        >
-          <Typography
-            sx={{
-              fontSize: "3rem",
-              color: "#0041AD",
-              textTransform: "uppercase",
-              letterSpacing: ".8rem",
-            }}
-          >
-            Interships and Bootcamps
-          </Typography>
           <Box
             sx={{
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              fontSize: "1.3rem",
+              width: "33%",
             }}
           >
-            <Box>
-              <Typography
+            <Typography
+              sx={{
+                fontSize: "2.4rem",
+                fontWeight: "bold",
+              }}
+            >
+              Programming
+            </Typography>
+            <List
+              sx={{
+                marginLeft: "2rem",
+              }}
+            >
+              <ListItem
                 sx={{
-                  textAlign: "center",
-                  fontSize: "2rem",
-                  fontWeight: "bold",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                Daneshkar ReactJS Bootcamp
-              </Typography>
-              <List
+                <CodeIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  C++
+                </Typography>
+              </ListItem>
+              <ListItem
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                <ListItem
+                <CodeIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <SchoolIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    HTML, CSS, JS , React
-                  </Typography>
-                </ListItem>
-                <ListItem
+                  C#
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <JavascriptIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <LocationOnIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Online
-                  </Typography>
-                </ListItem>
-                <ListItem
+                  Javascript
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <CodeIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <AccessTimeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    2021-2022
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                  Java
+                </Typography>
+              </ListItem>
+            </List>
           </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            alignItems: "center",
-            gap: "2rem",
-          }}
-        >
-          <Typography
-            sx={{
-              fontSize: "3rem",
-              color: "#0041AD",
-              textTransform: "uppercase",
-              letterSpacing: ".8rem",
-            }}
-          >
-            Education
-          </Typography>
           <Box
             sx={{
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              fontSize: "1.3rem",
+              width: "33%",
             }}
           >
-            <Box>
-              <Typography
+            <Typography
+              sx={{
+                fontSize: "2.4rem",
+                fontWeight: "bold",
+              }}
+            >
+              Project Management
+            </Typography>
+            <List
+              sx={{
+                marginLeft: "2rem",
+              }}
+            >
+              <ListItem
                 sx={{
-                  textAlign: "center",
-                  fontSize: "2rem",
-                  fontWeight: "bold",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                University of Isfahan
-              </Typography>
-              <List
+                <GitHubIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Git
+                </Typography>
+              </ListItem>
+              <ListItem
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
+                  display: "inline-flex",
+                  gap: "1rem",
                 }}
               >
-                <ListItem
+                <WorkspacesIcon />
+                <Typography
                   sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
+                    fontSize: "1.8rem",
                   }}
                 >
-                  <SchoolIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Computer Engineering
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <LocationOnIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    Isfahan, Iran
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: "inline-flex",
-                    gap: "1rem",
-                  }}
-                >
-                  <AccessTimeIcon />
-                  <Typography
-                    sx={{
-                      fontSize: "1.3rem",
-                    }}
-                  >
-                    2017-2022
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                  Trello
+                </Typography>
+              </ListItem>
+            </List>
           </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            alignItems: "center",
-            gap: "2rem",
-          }}
-        >
-          <Typography
-            sx={{
-              fontSize: "3rem",
-              color: "#0041AD",
-              textTransform: "uppercase",
-              letterSpacing: ".8rem",
-            }}
-          >
-            Personal Life
-          </Typography>
-          <Typography
-            sx={{
-              width: "100%",
-              fontSize: "1.3rem",
-            }}
-          >
-            I like writing, though i'm not very good at it, i also make simple
-            video games as a hobbie, mostly 2D games and web-browser games. For
-            pastime i play games and watch movies and TV shows. Occasionally, i
-            read books. I also workout and walk around as exercise. I'm also a
-            PC Building enthusiast and have a lot of knowledge about different
-            PC parts.
-          </Typography>
         </Box>
       </Box>
-    )
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          alignItems: "center",
+          gap: "3rem",
+        }}
+      >
+        <Typography
+          sx={{
+            fontSize: "4rem",
+            color: "#0041AD",
+            textTransform: "uppercase",
+            letterSpacing: "1rem",
+          }}
+        >
+          Education
+        </Typography>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            fontSize: "1.3rem",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                textTransform: "uppercase",
+                letterSpacing: ".8rem",
+                fontSize: "3rem",
+                fontWeight: "bold",
+                marginBottom: "1rem",
+              }}
+            >
+              Official
+            </Typography>
+            <Typography
+              sx={{
+                textAlign: "center",
+                fontSize: "2.4rem",
+                fontWeight: "bold",
+                marginBottom: "1rem",
+              }}
+            >
+              University of Isfahan
+            </Typography>
+            <List
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "1rem",
+              }}
+            >
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <SchoolIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Computer Engineering
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <LocationOnIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Isfahan, Iran
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <AccessTimeIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  2017-2022
+                </Typography>
+              </ListItem>
+            </List>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                textTransform: "uppercase",
+                letterSpacing: ".8rem",
+                fontSize: "3rem",
+                fontWeight: "bold",
+                marginBottom: "1rem",
+              }}
+            >
+              Bootcamps
+            </Typography>
+            <Typography
+              sx={{
+                textAlign: "center",
+                fontSize: "2.4rem",
+                fontWeight: "bold",
+                marginBottom: "1rem",
+              }}
+            >
+              Daneshkar ReactJS Bootcamp
+            </Typography>
+            <List
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "1rem",
+              }}
+            >
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <SchoolIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  HTML, CSS, JS , React
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <LocationOnIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Online
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  display: "inline-flex",
+                  gap: "1rem",
+                }}
+              >
+                <AccessTimeIcon />
+                <Typography
+                  sx={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  2021-2022
+                </Typography>
+              </ListItem>
+            </List>
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          alignItems: "center",
+          gap: "3rem",
+        }}
+      >
+        <Typography
+          sx={{
+            fontSize: "4rem",
+            color: "#0041AD",
+            textTransform: "uppercase",
+            letterSpacing: "1rem",
+          }}
+        >
+          Personal Life
+        </Typography>
+        <Typography
+          sx={{
+            width: "100%",
+            fontSize: "2rem",
+          }}
+        >
+          I like writing, though i'm not very good at it, i also make simple
+          video games as a hobbie, mostly 2D games and web-browser games. For
+          pastime i play games and watch movies and TV shows. Occasionally, i
+          read books. I also workout and walk around as exercise. I'm also a PC
+          Building enthusiast and have a lot of knowledge about different PC
+          parts.
+        </Typography>
+      </Box>
+    </Box>
+  );
 }
 
-export default MainContent
+export default MainContent;

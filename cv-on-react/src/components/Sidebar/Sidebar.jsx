@@ -19,10 +19,10 @@ function Sidebar() {
           background: "rgb(2,0,36)",
           background:
             "linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%)",
-          width: "30%",
+          width: "35%",
           display: "flex",
           flexDirection: "column",
-          gap: "3rem",
+          gap: "3.9rem",
           alignItems: "center",
           color: "white",
           height: "140rem",
@@ -47,7 +47,7 @@ function Sidebar() {
         >
           <Typography
             sx={{
-              fontSize: "1.9rem",
+              fontSize: "2.33rem",
               fontWeight: "bold",
               letterSpacing: "0.1rem",
             }}
@@ -222,7 +222,7 @@ function Sidebar() {
         </Box>
         <Typography
           sx={{
-            marginTop: "13rem",
+            marginTop: "0",
             color: "white",
             fontWeight: "bold",
           }}
